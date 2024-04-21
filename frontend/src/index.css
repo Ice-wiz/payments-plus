@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-y: scroll;
+}
+
+/* Button Styles */
+.btn-primary {
+  @apply w-[150px] text-center bg-black text-white border-2 border-neutral-400 rounded-md p-[5px] px-8 font-semibold hover:bg-black/80 transition-all max-[335px]:px-5;
+}
+
+.btn-secondary {
+  @apply w-[150px] text-center bg-black text-white border-2 border-neutral-400 rounded-md p-[5px] px-8 font-semibold hover:bg-black/80 transition-all max-[335px]:px-5;
+}
+
+/* Media Query for Button Width */
+@media (max-width: 335px) {
+  .btn-primary {
+    @apply max-[335px]:px-5;
+  }
+  
+  .btn-secondary {
+    @apply max-[335px]:px-5;
+  }
+}
